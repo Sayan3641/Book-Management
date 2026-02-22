@@ -19,6 +19,9 @@ public class BookService {
 	}
 
 	public BookEntity addBook(BookDto book) {
+		//custom exception
+		//int i = Integer.parseInt(null);
+		System.out.println("inside addBook");
 		BookEntity bookEntity = new BookEntity();
 		bookEntity.setName(book.getName());
 		bookEntity.setPrice(book.getPrice());
